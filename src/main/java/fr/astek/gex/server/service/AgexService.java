@@ -19,5 +19,10 @@ public class AgexService {
     public static Node getNode(String nodeId) {
         return new Node("Modification du libelle");
     }
+
+    public static void addNode(Node node) {
+        System.out.println("Node" + node);
+        return;
+    }
     
 }
