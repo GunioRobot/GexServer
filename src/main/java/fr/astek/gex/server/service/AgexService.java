@@ -19,7 +19,7 @@ public class AgexService {
         vivop.setProject(false);
         nodes.put("vivop", vivop);
         Node vio = new Node();
-        vivop.setId("vio");
+        vio.setId("vio");
         vio.setLabel("Vio");
         vio.setParentId("vivop");
         vio.setProject(true);
