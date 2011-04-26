@@ -15,11 +15,11 @@ import javax.ws.rs.core.MediaType;
  * @author sdaclin
  */
 @Path("/node")
-@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 @Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 public class NodeResource {
     
     @POST
+    @Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
     public void addNode(Node node){
         AgexService.addNode(node);
     }
