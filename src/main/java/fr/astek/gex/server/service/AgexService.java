@@ -10,7 +10,7 @@ import java.util.Map;
  * @author sdaclin
  */
 public class AgexService {
-    private static Map<String,Node> nodes = new HashMap<String, Node>();
+    private static final Map<String,Node> nodes = new HashMap<String, Node>();
     static {
         Node vivop = new Node();
         vivop.setId("vivop");
