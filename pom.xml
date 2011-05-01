@@ -59,6 +59,12 @@
             <version>${jetty.version}</version>
             <type>jar</type>
         </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
 
     <build>
