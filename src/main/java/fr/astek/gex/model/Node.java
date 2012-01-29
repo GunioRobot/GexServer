@@ -17,9 +17,9 @@ public class Node {
     String typeExigenceTree;
     String label;
     Boolean project;
-    
+
     public Node(){};
-    
+
     public Node(String label) {
         this.label = label;
     }

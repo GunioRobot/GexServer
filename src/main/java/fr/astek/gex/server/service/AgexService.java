@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
  */
 public class AgexService {
     public static final String TYPE_EXIGENCE_SEPARATOR = ">";
-  
+
     private static final Pattern patternNodeId = Pattern.compile("^[a-z]");
 
     private static final Map<String, Node> nodes = new HashMap<String, Node>();
@@ -33,7 +33,7 @@ public class AgexService {
         te.setId("ti");
         te.setLabel("Test d'intégration");
         typeExigences.put("ti", te);
-        
+
         Node vivop = new Node();
         vivop.setId("vivop");
         vivop.setLabel("Vivop");
@@ -58,7 +58,7 @@ public class AgexService {
     /**
      * Retourne tous les fils d'un node
      * @param nodeId
-     * @return 
+     * @return
      */
     public static List<Node> listNode(String nodeId) {
         List<Node> list = new ArrayList<Node>();
@@ -143,14 +143,14 @@ public class AgexService {
         }
         return toReturn;
     }
-    
+
     public static List<Node> getPath(String nodeId){
         List<Node> path = new ArrayList();
         getPathRecurse(path, nodeId);
         Collections.reverse(path);
         return path;
     }
-    
+
     private static void getPathRecurse(List<Node> path, String nodeId) {
         Node node = getNode(nodeId);
         path.add(node);

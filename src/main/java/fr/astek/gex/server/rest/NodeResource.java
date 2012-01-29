@@ -17,20 +17,20 @@ import javax.ws.rs.core.MediaType;
 @Path("/node")
 @Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 public class NodeResource {
-    
+
     @POST
     @Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
     public void addNode(Node node){
         AgexService.addNode(node);
     }
-    
-    @GET 
+
+    @GET
     @Path("/list/{nodeId}")
     public List<Node> getNodeList(@PathParam("nodeId") String nodeId) {
         return AgexService.listNode(nodeId);
     }
-    
-    @GET 
+
+    @GET
     @Path("/id/{nodeId}")
     public Node getNode(@PathParam("nodeId") String nodeId) {
         return AgexService.getNode(nodeId);
